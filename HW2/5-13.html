@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Skew</title>
+		<link href = 'http://fonts.googleapis.com/css?family=Rosario'
+			rel = 'stylesheet' type = 'text/css'>
+		<style type = 'text/css'>
+		.flexbox
+		{
+			
+			width: 600px;
+			height: 420px;
+			display: -webkit-box;
+			display: box;
+			-webkit-box-orient: vertical;
+			box-orient: vertical;
+		}
+
+		.flexbox > div
+		{
+			-webkit-transition: 1s ease-out;
+			transition: 1s ease-out;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			border: 2px solid black;
+			width: 380px;
+			height: 100px;
+			margin: -5px -10px -5px 10px;
+			padding: 20px 20px 20px 20px;
+			box-shadow: 10px 10px 10px dimgrey;
+		}
+		.flexbox > div:nth-child(1) {background-color: lightgrey;}
+		.flexbox > div:nth-child(2) {background-color: lightgrey;}
+		.flexbox > div:nth-child(3) {background-color: lightgrey;}
+		.flexbox > div:nth-child(4) {background-color: lightgrey;}
+
+		p{height: 100px; overflow: hidden; font-family: "Rosario"}
+		p:hover{height: 200px; overflow: visible;}
+
+		.flexbox > div:hover {height: 150px;}
+		</style>
+	</head>
+	<body>
+		<div class = "flexbox">
+			<div>
+				<img src = "GPP.png" alt = "Good programming practice icon" style ="float:left; padding:10px";>
+				<p>
+						Good Programming Practices call attention to techniques that will help you produce programs that are clearer, more understandable
+						and more maintainable.
+				</p>
+			</div>
+			<div>
+				<img src = "EPT.png" alt = "Error prevention tip icon" style ="float:left; padding:10px";>
+				<p>
+					Error-Prevention Tips contain suggestions for exposing bugs 
+					and removing them from you programs; many describe aspects of 
+					programming that prevent bugs from getting into programs in
+					the first place.
+				</p>
+			</div>
+			<div>
+				<img src = "CPE.png" alt = "Commong programming error icon" style ="float:left; padding:10px";>
+				<p>
+					Common Programming Errors point out the errors that students 
+					tend to make frequently.  These common programming errors reduce
+					the likelihood that you'll make the same mistakes.
+				</p>
+			</div>
+			<div>
+				<img src = "SEO.png" style ="float:left; padding:10px";>
+				<p>
+					Software Engineering Observations highlight architectural and design issues that affect the construction of software systems,
+					especially large-scale systems.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+
+<!--
+
+2. Page 184/5.13 : (FBLM) Modify the example in Fig. 5.16 to use a vertical flexbox. ( use google chrome to test ). 
+The flexboxes should expand vertically and no gaps between the boxes. When the mouse hovers over, the flexbox expands vertically and the overflow text is revealed.
+
+-->

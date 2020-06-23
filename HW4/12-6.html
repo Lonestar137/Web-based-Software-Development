@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>12-6</title>
+    </head>
+    <body>
+        <h1>Customizable webpage</h1>
+        <p>Select an option below: </p>
+        <div id = "1">Gray background</div>
+        <div id = "2">White background</div>
+        <div id = "3">Sans-serif text</div>
+        <div id = "4">Serif text</div>
+        <script>//formating script.
+            document.getElementById("1").addEventListener("click", 
+                function(){document.body.setAttribute("style", "background-color: gray");}
+                );//end 1
+            document.getElementById("2").addEventListener("click",
+                function(){document.body.setAttribute("style", "background-color: white");}
+                );//end 2
+            document.getElementById("3").addEventListener("click",
+                function(){document.body.setAttribute("style", "font-family: sans-serif")}
+                );//end 3
+            document.getElementById("4").addEventListener("click",
+                function(){document.body.setAttribute("style", "font-family: serif")}
+                );//end 4
+        </script>
+    </body>
+</html>
+
+<!--
+    Page 420 12.6
+    Goal: Create a web page in which the user is allowed to select ethe page's background color and whether the page
+    uses serif or sans serif fonts.  Then change the body element's sytle attribute accordingly.
+
+    There are several options on the webpage:
+    Gray background
+    White background
+    Sans-serif text
+    Serif text
+    If the user onclicks any of the options, the webpage will turn into that format.  For example, if the suer clicks "Gray background" the background
+    will turn that color.  If they click sans-serif then the page will use that format.
+-->

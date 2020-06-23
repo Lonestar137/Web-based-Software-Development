@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>9-17</title>
+        <script>
+            document.writeln("<h1>Fahrenheit and Celsius calculator</h1>")
+            var far, cel;
+            function fahrenheitIn()
+            {   
+                far = document.getElementById("userInput").value;
+                cel = 5.0/9.0*(far-32);
+                document.getElementById("output").innerHTML = "Celsius: " + cel;
+            }
+            function celsiusIn()
+            {
+                cel = document.getElementById("userInput").value;
+                
+                far = 9.0/5.0*cel+32;
+                document.getElementById("output").innerHTML = "Fahrenheit: " + far;
+            }
+        </script>
+    </head>
+            <body>
+                
+                <form method = "get">
+                    <label>Degrees to convert:  
+                        <input type ="number" id = "userInput"/>
+                    </label>
+                    
+                    <button type ="button" onclick="fahrenheitIn()">Convert to Celsius</button> 
+                    <button type ="button" onclick="celsiusIn()">Convert to Fahrenheit</button>
+                </form>
+                <p id="output"></p>
+            </body>
+       
+</html>
+
+<!--
+    PG 321 9.17
+    Implement the following functions:
+    a)  Function Celsius returns the Celsius equivalent of a Fahrenheit temperature, using the calculation:
+        C= 5.0/9.0*(F-32)
+
+    b)  Function fahrenheit returns the Fahrenheit equivalent of a Celsius temperature, using the calculation
+        F=9.0/5.0*C+32
+
+    c)  Use these functions to write a script that enables the user to enter either a Fahrenheit or a Celsius temperature and displays the 
+        Celsius or Fahrenheit equivalent.  Your HTML5 document should contain two buttons -- one to initiate the conversion from Fahrenheit
+        to Celsius and one to initiate the conversion from Celsius to Fahrenheit.
+-->
